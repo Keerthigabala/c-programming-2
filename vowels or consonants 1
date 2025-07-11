@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    char ch = 'u'; 
+
+
+    if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) {
+        switch (ch) {
+            case 'A': case 'E': case 'I': case 'O': case 'U':
+            case 'a': case 'e': case 'i': case 'o': case 'u':
+                printf("The Character %c is Vowel\n", ch);
+                break;
+            default:
+                printf("The Character %c is Consonant\n", ch);
+        }
+    } else {
+        printf("Invalid Input\n");
+    }
+
+    return 0;
+}
