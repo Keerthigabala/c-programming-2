@@ -3,10 +3,7 @@
 int main() {
     int day;
 
-    // Read input
     scanf("%d", &day);
-
-    // Print corresponding weekday or error message
     switch(day) {
         case 1:
             printf("Monday\n");
