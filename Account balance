@@ -1,0 +1,51 @@
+#include <stdio.h>
+
+int main() {
+
+    int balance, option, amount;
+
+    scanf("%d", &balance);
+
+    scanf("%d", &option);
+
+    switch(option) {
+
+        case 1:
+
+            scanf("%d", &amount);
+
+            balance += amount;
+
+            printf("%d", balance);
+
+            break;
+
+        case 2:
+
+            scanf("%d", &amount);
+
+            if (amount > balance) {
+
+                printf("Insufficient Balance");
+
+            } else {
+
+                balance -= amount;
+
+                printf("%d", balance);
+
+            }
+
+            break;
+
+        default:
+
+            printf("Invalid Input");
+
+            break;
+
+    }
+
+    return 0;
+
+}
