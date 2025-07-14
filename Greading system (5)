@@ -1,0 +1,82 @@
+#include <stdio.h>
+
+#include <string.h>
+
+int main() {
+
+    char name[100];
+
+    int marks[5];
+
+    int total = 0;
+
+    double average;
+
+    // Get input from user
+
+    scanf("%s", name);
+
+    for (int i = 0; i < 5; i++) {
+
+        scanf("%d", &marks[i]);
+
+        total += marks[i];
+
+    }
+
+    // Calculate average
+
+    average = (double)total / 5;
+
+    // Display results
+
+    printf("Name of the Student:%s\n", name);
+
+    printf("Total Mark:%d\n", total);
+
+    printf("Average Mark:%.1lf\n", average);
+
+    // Determine grade
+
+    if (average == 100) {
+
+        printf("Grade Mark:S\n");
+
+    } else if (average >= 90) {
+
+        printf("Grade Mark:A\n");
+
+    } else if (average >= 80) {
+
+        printf("Grade Mark:B\n");
+
+    } else if (average >= 70) {
+
+        printf("Grade Mark:C\n");
+
+    } else if (average >= 60) {
+
+        printf("Grade Mark:D\n");
+
+    } else if (average >= 50) {
+
+        printf("Grade Mark:E\n");
+
+    } else {
+
+        printf("Grade Mark:Fail\n");
+
+    }
+
+    return 0;
+
+}
+
+
+
+
+
+
+    
+    
+
