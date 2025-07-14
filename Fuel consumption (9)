@@ -1,0 +1,46 @@
+#include <stdio.h>
+
+int main() {
+
+    float liters, distance;
+
+    scanf("%f", &liters);
+
+    scanf("%f", &distance);
+
+    if (liters <= 0 || distance <= 0) {
+
+        printf("Invalid Input\n");
+
+    } else {
+
+        float liters_per_100km = (liters / distance) * 100;
+
+        float miles = distance * 0.6214;
+
+        float gallons = liters * 0.2642;
+
+        float mpg = miles / gallons;
+
+        printf("Liters/100KM\n");
+
+        printf("%.2f\n", liters_per_100km);
+
+        printf("Miles/gallons\n");
+
+        printf("%.2f\n", mpg);
+
+    }
+
+    return 0;
+
+}
+
+
+
+
+
+
+   
+ 
+
