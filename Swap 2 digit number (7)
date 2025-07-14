@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+int main() {
+
+    int num;
+
+    scanf("%d", &num);
+
+    // Handle case where number has less than 2 digits
+
+    if (num < 10) {
+
+        printf("STDOUT\n");
+
+        return 0;
+
+    }
+
+    // Extract first two digits
+
+    int temp = num;
+
+    while (temp >= 100) {
+
+        temp /= 10;
+
+    }
+
+    // Now temp has the first two digits
+
+    int first = temp / 10;
+
+    int second = temp % 10;
+
+    // Swap the digits and print
+
+    printf("%d%d\n", second, first);
+
+    return 0;
+
+}
